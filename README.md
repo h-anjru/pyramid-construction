@@ -8,9 +8,9 @@ In 2019, GMAP and the [UF UAS Research Program](https://uas.ifas.ufl.edu/) devel
 
 More on the development and testing of the pyramids can be found in [Geometric Targets for UAS Lidar (Wilkinson *et al.*, 2019)](https://doi.org/10.3390/rs11243019).
 
-![Surveying the real-world positions of a pyramid before a UAS lidar data collection.](pyramid_surveying.jpg)
+![Surveying the real-world positions of a pyramid before a UAS lidar data collection.](media/pyramid_surveying.jpg)
 
-![Visual example of the steps of pyramid mensuration.](pyramid_mensuration.png)
+![Visual example of the steps of pyramid mensuration.](media/pyramid_mensuration.png)
 
 ## Purpose of this script
 
@@ -24,7 +24,7 @@ The script begins with a simple definition of a corner cube pyramid with the ape
 
 It can be easily shown that the base is coincident with the plane $x+y+z=1$ with normal $\mathbf{n_b}=\langle \frac{\sqrt{3}}{3},\frac{\sqrt{3}}{3},\frac{\sqrt{3}}{3} \rangle$.
 
-![Graph of the unit pyramid with plane equation of base and normal.](unit_pyramid.png)
+![Graph of the unit pyramid with plane equation of base and normal.](media/unit_pyramid.png)
 
 ### Center of the base
 
@@ -59,6 +59,6 @@ where $\theta$ is the angle between the two vectors and $\mathbf{n}$ is the norm
 
 The MATLAB quaternion rotation function `quatrotate()` is designed to rotate the space around a vector or object; to rotate an object, the inverse of quaternion $q$ as defined above is used.
 
-![Graph of the scaled and rotated unit pyramid.](scaled_rotated_pyramid.png)
+![Graph of the scaled and rotated unit pyramid.](media/scaled_rotated_pyramid.png)
 
 The vertices of the rotated and scaled pyramid can be used to construct a template (such as a [PLY](https://en.wikipedia.org/wiki/PLY_(file_format))) that can be used for fitting to point cloud data.
